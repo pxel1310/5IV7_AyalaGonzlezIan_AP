@@ -1,0 +1,22 @@
+{
+  "name": "jutsuselementales-agi",
+  "version": "1.0.0",
+  "description": "Este es el examen práctico de sistemas automatizados",
+  "main": "index.js",
+  "scripts": {
+    "naruto": "nodemon src/index.js"
+  },
+  "author": "Ian Ayala González",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="body-conteiner">
+      <section>
+        <header>
+          <h1></h1>
+        </header>
+      </section>
+      <section class="half">
+        <div class="d-flex center-flex">
+          <input
+            type="text"
+            id="pokemonName"
+            class="lcd-input"
+            placeholder="Ingresa el nombre del pokemon"
+          />
+          <input type="hidden" id="pokemoId" value="0" />
+          <button class="btn" id="btnSearch">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <div class="columns-elements">
+            <button class="btn" id="btnUp">
+              <i class="fa-solid fa-caret-up"> </i>
+            </button>
+            <button id="btnDown" class="btn">
+              <i class="fa-solid fa-caret-down"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          id="pokedisplay-container"
+          class="d-flex center-flex pokedisplay-container"
+        >
+          <img src="./src/pokeball.png" alt="" class="pokedisplay" />
+        </div>
+      </section>
+      <section class="half" id="pokemonDa">
+        <h3 id="pokemonNameResult" class="ceneter-fles"></h3>
+        <div class="center-flex">
+          <div>Tipo de Pokemon:</div>
+          <div id="pokemonTypes" class="pokemon-types-container"></div>
+        </div>
+        <table class="pokemon-stat-table">
+          <thead>
+            <tr>
+              <td colspan="6">Estadisticas Base:</td>
+            </tr>
+            <tr>
+              <td>hp</td>
+              <td>attack</td>
+              <td>defense</td>
+              <td>special attack</td>
+              <td>special defense</td>
+              <td>speed</td>
+            </tr>
+          </thead>
+          <tbody class="pokemonStats">
+            <tr>
+              <td class="pokemon-stats" id="pokemonStartHp">0</td>
+              <td class="pokemon-stats" id="pokemonStartAttack">0</td>
+              <td class="pokemon-stats" id="pokemonStartDefence">0</td>
+              <td class="pokemon-stats" id="pokemonStartSpecialAttack">0</td>
+              <td class="pokemon-stats" id="pokemonStartSpecialDefence">0</td>
+              <td class="pokemon-stats" id="pokemonStartSpeed">0</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row center-flex">
+          <div class="row-element">
+            Movimientos:
+            <ul id="pokemonMoves"></ul>
+          </div>
+          <div class="row-element">
+            Habilidades:
+            <ul id="pokemonAbilities"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://kit.fontawesome.com/101326ea39.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
